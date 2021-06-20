@@ -4,7 +4,7 @@ import App from './App.vue'
 Vue.config.productionTip = false
 /* custom directive */
 Vue.directive('change-color', function (el, color) {
-  el.style.color = color;
+  el.style.color = color.value;
   console.log(el, color);
 })
 

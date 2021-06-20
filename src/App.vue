@@ -16,7 +16,7 @@
         <div><span v-if="isTyping">User is Typing</span></div>
       </div>
       <h2 v-change-color-demo>Custom Directive</h2>
-      <h2 v-change-color="{color: 'red'}">Custom Directive</h2>
+      <h2 v-change-color="h2Color">Custom Directive</h2>
     </div>
   </div>
 </template>
@@ -29,6 +29,7 @@ export default {
   data() {
     return {
       message: 'Test Message',
+      h2Color: '#0f0',
       test: '<b>Test HTML</b>',
       // config: 'Testttt',
       names: ['A','B','C','D']
